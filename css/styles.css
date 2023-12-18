@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap');
+
+:root {
+	--font-title: 1.125rem;
+	--font-body: 0.875rem;
+	--font-small: 0.75rem;
+	--font-xs: 0.625rem;
+
+	--purple: #883ae1;
+	--light-pink: #e6d6fc;
+	--light-blue: #e5eaf0;
+	--whitesmoke: #fafaf9;
+	--white: #fff;
+	--navy-blue: #20293a;
+	--gray: #6c727f;
+}
+
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Sora', 'Poppins', sans-serif;
+	background-color: var(--whitesmoke);
 }
