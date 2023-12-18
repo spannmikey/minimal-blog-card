@@ -38,14 +38,16 @@ body {
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
 	background-color: var(--white);
 	box-shadow: 0px 10px 1px rgba(221, 221, 221, 1),
 		0 10px 20px rgba(204, 204, 204, 1);
 	border-radius: var(--spacing-16);
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
 	padding: var(--spacing-16);
-	position: relative;
 }
 
 .card img {
@@ -82,17 +84,12 @@ body {
 }
 
 .card .author {
-	margin-top: 60px;
-	margin-bottom: 5px;
+	margin: 20px var(--spacing-16);
 	font-size: var(--font-small);
 	color: var(--gray);
 	font-weight: 500;
 }
 
-.divider {
-	background-color: var(--light-blue);
-	height: 1px;
-	position: absolute;
-	top: 690px;
-	width: calc(var(--spacing-16) + 352px);
+.card-footer .divider {
+	border: 1px solid var(--light-blue);
 }
